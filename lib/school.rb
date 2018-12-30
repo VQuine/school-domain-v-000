@@ -34,7 +34,7 @@ def sort
     @roster.sort!
 
     @roster.collect do |key, value_names|
-      
+
       @roster[key].sort!
     end
 
