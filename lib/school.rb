@@ -31,10 +31,10 @@ class School
   end
 
 def sort
-    # puts @roster
+    @roster.sort!
 
     @roster.collect do |key, value_names|
-      @roster.sort!
+      
       @roster[key].sort!
     end
 
