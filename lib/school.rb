@@ -13,6 +13,7 @@ class School
 
   def add_student(student_name, grade)
     @roster[grade] ||= []
+    # ^--- if left side of "||=" is undefined, evaluate right side & set left side to the result - otherwise do nothing
     @roster[grade] << student_name
 
     # if @roster[grade] == nil
