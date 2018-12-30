@@ -31,7 +31,7 @@ class School
   end
 
 def sort
-    
+
 
     @roster.collect do |key, value_names|
       @roster[key].sort!
