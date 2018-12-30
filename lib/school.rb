@@ -7,10 +7,6 @@ class School
     @roster = {}
   end
 
-  # def school_name
-  #   @school_name
-  # end
-
   def roster
     @roster
   end
@@ -30,16 +26,11 @@ class School
     @roster[grade]
   end
 
-def sort
-
-
+  def sort
     @roster.collect do |key, value_names|
       @roster[key].sort!
     end
-
     return @roster
-
   end
 
-
-end # <--- method end
+end
