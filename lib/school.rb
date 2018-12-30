@@ -24,8 +24,18 @@ class School
     # else
     #   @roster[grade] << student_name
     # end
+  end
 
+  def grade(grade)
+    @roster[grade]
+  end
 
+def sort
+    # puts @roster
+
+    @roster.collect do |key, value_names|
+      @roster[key].sort!
+    end
 
   end
 
